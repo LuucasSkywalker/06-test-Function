@@ -56,3 +56,14 @@ const price2 = (value3,value4) => {
     console.log(value3 , value4)
 }
 price2(44, 15);
+
+/********************************************************** */
+
+//function da forma literal, sem parametro 
+
+function ex01 (){
+   let n1 = 12
+   let n2 = 12
+   return console.log(n1+n2)
+    
+}
