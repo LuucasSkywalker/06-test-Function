@@ -60,7 +60,7 @@ price2(44, 15);
 /********************************************************** */
 
 
-let n1 = 12
+/*let n1 = 12
 
 function ex01 (){
    if (n1 >= 12){
@@ -86,10 +86,17 @@ const ex03 = (c1) =>{
     return   `${c1 * res1}`
 }
   const res2 = ex03(2)
-  console.log(res2)
+  console.log(res2)*/
 
   /******************************************* */
 //criando uma função dentro do array
 
 const name = [(name1)=>{return name1}];
 console.log(name[0]('Lucas, Larissa, AnnaBelle'))
+
+/*********************************************** */
+//amarzenar dentro do atributo de um objeto
+
+const obj = {}
+obj.falar = function (){return 'opa'}
+console.log(obj.falar())
