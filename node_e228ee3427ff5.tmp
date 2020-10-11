@@ -27,13 +27,10 @@ speak();  // retorna undefined, pois a const "speak" não referência o this de 
 const speak2 = person1.speak.bind(person1)
 speak2();  //retorna "good morning"
 
-function person3 (){
-    
+person3 = (()=>{
     this.age = 0
     setInterval(()=>{
         this.age++
-        console.log(this.age)
-       
-    },1000)
-}
-new person3
+    },1000);
+})
+person3()

@@ -59,8 +59,7 @@ console.log(calc(2,2));
 
 //******************************************************* */
 
-//função arrow function amarzenada na variavel const
-
+//ARROW function amarzenada na variavel const
 const tipe = (n1, n2)=>{
     return n1 + n2;
 };
@@ -81,7 +80,16 @@ price2(44, 15);
 
 /********************************************************** */
 
+// ARROW function sem ser amarzenada em uma variável,
+add = (a) => {return  a * a}
+console.log(add(2));
 
+//outra forma como contem apenas um parametro pode tirar o corpo
+add = a => a*a   //quando usado assim sem corpo o return é automatico
+console.log(add(2));
+
+
+/********************************************************** */
 let n1 = 12
 
 function ex01 (){
