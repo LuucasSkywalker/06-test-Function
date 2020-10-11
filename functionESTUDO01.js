@@ -107,19 +107,19 @@ function ex01 (){
 const ex03 = (c1) =>{
     return   `${c1 * res1}`
 }
-  const res2 = ex03(2)
-  console.log(res2)
+  const res2 = ex03(2);
+  console.log(res2);
 
   /******************************************* */
 //criando uma função dentro do array
 const name = [(name1)=>{return name1}];
-console.log(name[0]('Lucas, Larissa, AnnaBelle'))
+console.log(name[0]('Lucas, Larissa, AnnaBelle'));
 
 /*********************************************** */
 //amarzenar dentro do atributo de um objeto
 const obj = {}
-obj.falar = function (){return 'opa'}
-console.log(obj.falar())
+obj.falar = function (){return 'opa'};
+console.log(obj.falar());
 
 /*********************************************** */
 
@@ -136,4 +136,4 @@ console.log(soma(2), soma (4,2));   //mesmo se tiver somento 1 parâmetro retorn
 function somar2 (a=1,b=1,c=1) {
     return a+b+c
 };
-console.log(soma(2))
+console.log(soma(2)); //retorna 4, pois função só recebeu um parâmetro com (2),
