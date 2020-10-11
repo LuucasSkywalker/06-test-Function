@@ -18,10 +18,20 @@ const fun2 = function (){};
 const anonimato = function (){};
 
 //armazenar função em um array
-const array  = [(nameadmin) => {return nameadmin}];
-    console.log( array[0]('Lucas Cavalcante')); 
+const array  = [function (nameadmin){return nameadmin}];
+    console.log(array[0]('Lucas Cavalcante')); 
+    //ou usar arrow function
+ const array = [(nameadmin) => {return nameadmin}];
+    console.log(array[0]('Lucas Cavalcante'));   
 
+//Uma função pode retornar/ ou conter outra função
 
+function soma (a,b){
+    return (c) =>{console.log(a+b+c)}
+}
+soma(4,4)(2);
+
+/*********************************************************** */
                          
 function add (n3, n4){
     return n3 + n4; 
