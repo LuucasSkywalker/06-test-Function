@@ -10,6 +10,19 @@ console.log(typeof Array)
 //********************************************************* */
 // função padrão
 
+function fun1 (){};
+
+//armazenar função em uma variável
+
+const fun2 = function (){};
+
+//armazenar função em um array
+
+const array  = [(nameadmin) => {return nameadmin}];
+    console.log( array[0]('Lucas Cavalcante')); 
+
+
+                         
 function add (n3, n4){
     return n3 + n4; 
 }
