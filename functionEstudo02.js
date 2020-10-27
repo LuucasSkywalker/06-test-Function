@@ -72,13 +72,19 @@ new person5
 
 /*FUNÇÕES ANÔNIMAS*/
 
-const soma = function (x,y) {
-    return x + y
+const soma = function (x,y) {  /*uma função anônima não possui um nome para ser
+                               ser chamada, então usa o parênteses () se for 
+                               passar algum parâmentro, se não usa uma const
+                               para armazenar a função anônima*/
+return x + y
 }
-const res = soma(2,2);
-console.log(res)
+(2,2); //como tem parâmetros passa o () com valor dentro
+console.log(soma)
 
-const soma2 = function (a1,b2,res)  {
- return a1+b2+res
+const soma2 = function (a1,b2,soma)  { /*Outra função anônima com parâmetros e
+                                       pegando em um dos parâmetros uma variável
+                                       que contem uma função anônima logo acima*/ 
+return a1+b2+soma
 }
-console.log(soma2(3,3,res))
+(3,3,soma) //passando valor do parâmetro anônima
+console.log(soma2)
