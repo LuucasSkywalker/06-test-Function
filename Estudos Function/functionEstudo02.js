@@ -69,8 +69,9 @@ function person5 (){
 }
 new person5
 
-
+//---------------------------------------------------------------------**
 /*FUNÇÕES ANÔNIMAS*/
+//IMPORTANTE, UMA FUNÇÃO ARROW FUNCTION SEMPRE É ANÔNIMA
 
 const soma = function (x,y) {  /*uma função anônima não possui um nome para ser
                                ser chamada, então usa o parênteses () se for 
@@ -88,3 +89,22 @@ return a1+b2+soma
 }
 (3,3,soma) //passando valor do parâmetro anônima
 console.log(soma2)
+
+//---------------------------------------------------------------------**
+/*FUNÇÕES CALLBACK */
+//CALLBACK É UMA FUNÇÃO QUE IRÁ RETORNAR QUANDO UM EVENTO ACONTECER
+
+const school = ['Nivo das Neves','Mather Izabel','Supletivo'] //array 
+
+function schoolDistrict (name, indice ){  /*função nomeada schollDistrict com os
+                                          os parâmetros do array, [name,indice]
+                                          */
+    console.log(`${indice}, ${name}`)
+}
+    school.forEach(schoolDistrict)       /* O método forEach() permite executar uma função 
+                                         para cada item de um array. Veja sobre forEach
+                                         na paste Estudos Function */
+                                    
+
+
+
