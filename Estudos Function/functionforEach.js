@@ -1,5 +1,7 @@
 //RASCULHOS FOREACH
-//o método forEach() permite executar uma função para cada item de um array.
+/*o método forEach() permite executar uma função para cada item de um array.
+uma função forEach esperá um parâmetro obrigatório, ou sejá quando usar um
+forEach deve ser passar pelo menos um parâmetro dentro forEach(parâmetro) */
 
 
 //Valor retornado: Verde Amarelo Azul Branco
@@ -75,3 +77,18 @@ function maiorNome(item, indice) {
 
 nomes.forEach(maiorNome);
 console.log(nome);
+
+//---------------------------------------------------------------------**.
+//Armazenando no ARRAY list os elementos aprovados do listApro1 usando o forEach
+const listaApro1 = [{name:'Lucas', Note: 9.6},
+                   {name:'Larissa', Note: 7.2},
+                   {name:'Cleyri', Note: 5.6},
+                   {name:'Annabelle', Note: 5.1}]
+
+const list = []
+listaApro1.forEach((aprovados, indice, nota)=> {
+  if (aprovados.Note >= 7){
+      list.push(aprovados)
+  }
+});
+console.log(list.length)

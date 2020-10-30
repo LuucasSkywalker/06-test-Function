@@ -104,6 +104,54 @@ function schoolDistrict (name, indice ){  /*função nomeada schollDistrict com 
     school.forEach(schoolDistrict)       /* O método forEach() permite executar uma função 
                                          para cada item de um array. Veja sobre forEach
                                          na paste Estudos Function */
+
+
+const listaApro = [{name:'Lucas', Note: 9.6},
+                   {name:'Larissa', Note: 7.2},
+                   {name:'Cleyri', Note: 5.6},
+                   {name:'Annabelle', Note: 5.1}]
+
+
+function aprovados (name,indice){
+ console.log(indice, name)
+ 
+}
+listaApro.forEach(aprovados);
+
+
+//FAZENDO UM FOREACH USANDO ARROW FUNCTION
+const listaApro1 = [{name:'Lucas', Note: 9.6},
+                   {name:'Larissa', Note: 7.2},
+                   {name:'Cleyri', Note: 5.6},
+                   {name:'Annabelle', Note: 5.1}]
+
+
+listaApro1.forEach((aprovados, indice)=> {  /* Usando um forEach numa função arrow function
+                                            não precisa declarar um nome, poís o forEach
+                                            precisa de um parâmetro aleatório, então deixa
+                                            um que condiz com o código a ser execultado */
+console.log(indice, aprovados)
+});
+
+
+//Armazenando no ARRAY list os elementos aprovados do listApro1 usando o forEach
+const listaApro2 = [{name:'Lucas', Note: 9.6},
+                   {name:'Larissa', Note: 7.2},
+                   {name:'Cleyri', Note: 5.6},
+                   {name:'Annabelle', Note: 5.1}]
+
+const list = []
+listaApro2.forEach((aprovados, indice, nota)=> {
+  if (aprovados.Note >= 7){
+      list.push(aprovados)
+  }
+});
+console.log(list.length)
+
+
+
+
+                                         
                                     
 
 
