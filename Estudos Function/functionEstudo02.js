@@ -106,6 +106,31 @@ function schoolDistrict (name, indice ){  /*função nomeada schollDistrict com 
                                          na paste Estudos Function */
 
 
+//CRIANDO UMA EXECUÇÃO NO ARRAY SEM CALLBACK
+
+//SEM CALLBACK
+const notas = [7.7, 8.5, 4.6, 6.1, 5.8, 5.5, 8,1, 4.9] //array com notas diferentes
+
+const notasAprovadas = []          //array vazío para armazenar elementos dentro
+for (let i in notas)               //usando um for in para percorrer o array notas
+if (notas[i] >= 6) {               //usando um if para usar a condição do valor que é aprovado 
+    notasAprovadas.push(notas[i])  //usando o push para armazenar os valores aprovados no array
+}
+console.log(notasAprovadas)        //valor retornado 7.7, 8.5, 6.1, 8.1
+
+//USANDO O MESMO EXEMPLO ACIMA UTILIZANDO O FOR
+const notas = [7.7, 8.5, 4.6, 6.1, 5.8, 5.5, 8.1, 4.9]
+
+const notasAprovadas = []
+for (let i = 0; i <= notas.length; i++){
+    if (notas[i] >= 6) {
+    notasAprovadas.push(notas[i])
+}}
+
+console.log(notasAprovadas)
+
+
+
 const listaApro = [{name:'Lucas', Note: 9.6},
                    {name:'Larissa', Note: 7.2},
                    {name:'Cleyri', Note: 5.6},
@@ -134,14 +159,14 @@ console.log(indice, aprovados)
 });
 
 
-//Armazenando no ARRAY list os elementos aprovados do listApro1 usando o forEach
+//Armazenando no ARRAY list os elementos aprovados do listApro2 usando o forEach
 const listaApro2 = [{name:'Lucas', Note: 9.6},
                    {name:'Larissa', Note: 7.2},
                    {name:'Cleyri', Note: 5.6},
                    {name:'Annabelle', Note: 5.1}]
 
 const list = []
-listaApro2.forEach((aprovados, indice, nota)=> {
+listaApro2.forEach((aprovados, indice)=> {
   if (aprovados.Note >= 7){
       list.push(aprovados)
   }

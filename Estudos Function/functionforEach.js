@@ -79,7 +79,7 @@ nomes.forEach(maiorNome);
 console.log(nome);
 
 //---------------------------------------------------------------------**.
-//Armazenando no ARRAY list os elementos aprovados do listApro1 usando o forEach
+//Armazenando no ARRAY list os elementos aprovados do listApro2 usando o forEach
 const listaApro1 = [{name:'Lucas', Note: 9.6},
                    {name:'Larissa', Note: 7.2},
                    {name:'Cleyri', Note: 5.6},
