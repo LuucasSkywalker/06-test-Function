@@ -92,4 +92,4 @@ listaApro2.forEach((aprovados, indice)=> {
       list.push(aprovados)
   }
 });
-console.log(list[0].Note)  //irá trazer o resultado 
+console.log(list[0].Note)  //irá trazer o resultado gerado no callback
