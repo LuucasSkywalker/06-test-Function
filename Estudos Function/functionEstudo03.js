@@ -65,6 +65,9 @@ function aprovados (name,indice){
 listaApro.forEach(aprovados);
 
 
+const 
+
+
 //FAZENDO UM FOREACH USANDO ARROW FUNCTION
 const listaApro1 = [{name:'Lucas', Note: 9.6},
                    {name:'Larissa', Note: 7.2},

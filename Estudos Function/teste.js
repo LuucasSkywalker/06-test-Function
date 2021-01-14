@@ -1,4 +1,4 @@
-const notas = [7.7, 8.5, 4.6, 6.1, 5.8, 5.5, 8.1, 4.9]
+/*const notas = [7.7, 8.5, 4.6, 6.1, 5.8, 5.5, 8.1, 4.9]
 
 const notasAprovadas = []
 for (let i = 0; i <= notas.length; i++){
@@ -32,4 +32,32 @@ listaApro2.forEach((aprovados, indice)=> {
       list.push(aprovados)
   }
 });
-console.log(list[0].Note)
+console.log(list[0].Note) */
+
+
+const NotaAlunos = [7.2,6.1,5.6,8.1,5.5,7.2]
+
+const ResAlunos = NotaAlunos.filter((indice) =>{   // chamando um callback 'filter()'
+  return indice >= 6
+});
+console.log(ResAlunos)
+
+
+
+const Taboada = ((v1)=> {
+  var res = v1
+  
+    for( var i = 0; i < res ; i++){
+      console.log(`${res} * ${i} = ${res*i}`)
+     
+      if (res*i < 6) {
+        console.log(`ERRO limite de ${res} erros, tente mais TARDE`)
+      }
+
+    }  
+    
+    
+})
+
+Taboada(7)
+
