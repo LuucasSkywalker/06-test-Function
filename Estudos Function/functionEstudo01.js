@@ -18,11 +18,11 @@ const fun2 = function (){};
 const anonimato = function (){};
 
 //armazenar função em um array
-const array  = [function (nameadmin){return nameadmin}];
-    console.log(array[0]('Lucas Cavalcante')); 
+const valorarray  = [function (nameadmin){return nameadmin}];
+    console.log(valorarray[0]('Lucas Cavalcante')); 
     //ou usar arrow function
  const array = [(nameadmin) => {return nameadmin}];
-    console.log(array[0]('Lucas Cavalcante'));   
+    console.log(valorarray[0]('Lucas Cavalcante'));   
 
 //Uma função pode retornar/ ou conter outra função
 function soma (a,b){
@@ -63,8 +63,8 @@ console.log(calc(2,2));
 const tipe = (n1, n2)=>{
     return n1 + n2;
 };
-const res = tipe(5,8)
-console.log(res);
+const res4 = tipe(5,8)
+console.log(res4);
 
 
 const price = (value1,value2) => {
@@ -145,3 +145,54 @@ function somar2 (a=1,b=1,c=1) {
     return a+b+c
 };
 console.log(soma(2)); //retorna 4, pois função só recebeu um parâmetro com (2),
+
+//--------------------------------------------- . . .
+
+// Funções CONSTRUTORAS 
+
+/*
+Em JavaScript, ( Number ) é um objeto que permite trabalhar com valores numéricos. 
+Ele pode ser usado tanto como um tipo primitivo quanto como um objeto.
+Em JavaScript, ( Number.prototype ) é uma propriedade do construtor Number que 
+permite adicionar métodos e propriedades a todos os objetos Number1. (prototype) é 
+um mecanismo pelo qual objetos herdam propriedades e métodos uns dos outros.
+Em Number Isso significa que qualquer instância de Number herdará esses métodos e propriedades.
+Por exemplo, você pode adicionar um método personalizado a Number.prototype 
+para calcular a metade de um número:
+
+*/ 
+Number.prototype.metade = function (){
+    return this   / 2
+};
+const numero = 200
+console.log(numero.metade())
+
+// -------------------------------------------------- . . .
+Number.prototype.entre = function (inicio, fim) {
+    return this >= inicio && this <= fim
+}
+const NotasFacul = function(notasF){
+    if (notasF.entre(9, 10)){
+       return console.log('Excelente, voçê está de parabéns')
+    } else if (notasF.entre(8, 8.99)){
+       return console.log('parabéns pela nota')
+    } else if (notasF.entre(6, 7.99)){
+        return console.log('parabéns, continue se esforçando')
+    } else {
+    console.log('reprovado, estude mais !')
+    }
+}
+NotasFacul(2)
+
+/*Em JavaScript, o prototype é um mecanismo pelo qual objetos herdam
+ propriedades e métodos uns dos outros. Cada função construtora tem 
+ uma propriedade chamada prototype, que é usada para adicionar 
+ métodos e propriedades que serão compartilhados por todas as 
+ instâncias criadas por essa função
+ Herança: Todos os objetos em JavaScript herdam de um protótipo. 
+ Por exemplo, objetos de data herdam de Date.prototype, 
+ e objetos de array herdam de Array.prototype.
+Adição de métodos: Você pode adicionar novos métodos a um construtor 
+de objetos usando a propriedade prototype. Por exemplo:
+JavaScript
+ */ 
