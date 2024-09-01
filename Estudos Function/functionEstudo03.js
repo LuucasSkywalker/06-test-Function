@@ -17,7 +17,7 @@ function schoolDistrict (name, indice ){  /*função nomeada schollDistrict com 
     school.forEach(schoolDistrict)       /* O método forEach() permite executar uma função 
                                          para cada item de um array. Veja sobre forEach
                                          na paste Estudos Function */
-
+console.log(school.length)
 
 //CRIANDO UMA EXECUÇÃO NO ARRAY SEM CALLBACK
 
@@ -32,22 +32,23 @@ if (notas[i] >= 6) {               //usando um if para usar a condição do valo
 console.log(notasAprovadas)        //valor retornado 7.7, 8.5, 6.1, 8.1
 
 //USANDO O MESMO EXEMPLO ACIMA UTILIZANDO O FOR
-const notas = [7.7, 8.5, 4.6, 6.1, 5.8, 5.5, 8.1, 4.9]
+const notas2 = [7.7, 8.5, 4.6, 6.1, 5.8, 5.5, 8.1, 4.9]
 
-const notasAprovadas = []
-for (let i = 0; i <= notas.length; i++){
-    if (notas[i] >= 6) {
-    notasAprovadas.push(notas[i])
+const notasAprovadas2 = []
+for (let i = 0; i <= notas2.length; i++){
+    if (notas2[i] >= 6) {
+    notasAprovadas2.push(notas2[i])
 }}
 
-console.log(notasAprovadas)
+console.log(notasAprovadas2)
 
 
-//CRIANDO UMA EXECUÇÃO NO ARRAY COM CALLBACK
-const notas = [7.7, 8.5, 4.6, 6.1, 5.8, 5.5, 8.1, 4.9]
+//----------CRIANDO UMA EXECUÇÃO NO ARRAY COM CALLBACK------ . . .
 
-const notasAprovadas = []
-notasAprovadas = notas.filter()   /* O método filter() cria um novo array com todos os elementos 
+const notas3 = [7.7, 8.5, 4.6, 6.1, 5.8, 5.5, 8.1, 4.9]
+
+const notasAprovadas3 = []
+notasAprovadas3 = notas3.filter()   /* O método filter() cria um novo array com todos os elementos 
                                   que passaram no teste implementado pela função fornecida. Ele irá 
                                   filtrar elementos do array através de um critério 'true' e 'false'.*/ 
 
@@ -64,11 +65,14 @@ function aprovados (name,indice){
 }
 listaApro.forEach(aprovados);
 
+// --------------------------------------------------- ....
 
-const 
+const fruits = ['banana', 'apple', 'orange', 'lemon']  
+for ( const fruit of fruits){  //Usando (for of) para percorrer um array
+    console.log(fruit)    
+}
 
-
-//FAZENDO UM FOREACH USANDO ARROW FUNCTION
+//----------FAZENDO UM FOREACH USANDO ARROW FUNCTION--------- . . .
 const listaApro1 = [{name:'Lucas', Note: 9.6},
                    {name:'Larissa', Note: 7.2},
                    {name:'Cleyri', Note: 5.6},

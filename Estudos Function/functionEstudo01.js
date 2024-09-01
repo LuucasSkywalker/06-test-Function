@@ -17,6 +17,11 @@ const fun2 = function (){};
 // função anônima/ não tem nenhum nome
 const anonimato = function (){};
 
+const fruits = ['banana', 'apple', 'orange', 'lemon']  
+for ( const fruit of fruits){  //Usando (for of) para percorrer um array
+    console.log(fruit)    
+}
+
 //armazenar função em um array
 const valorarray  = [function (nameadmin){return nameadmin}];
     console.log(valorarray[0]('Lucas Cavalcante')); 
@@ -27,6 +32,7 @@ const boletoArray = [function(conta, conta2){ return `${conta} e ${conta2}`},
 console.log(boletoArray[0](433, 988), boletoArray[1](798) );
 console.log(boletoArray.length)
 
+boletoArray.forEach
 
 
     //ou usar arrow function
