@@ -20,6 +20,15 @@ const anonimato = function (){};
 //armazenar função em um array
 const valorarray  = [function (nameadmin){return nameadmin}];
     console.log(valorarray[0]('Lucas Cavalcante')); 
+
+// duas FUNCÕES dentro de um array
+const boletoArray = [function(conta, conta2){ return `${conta} e ${conta2}`},
+                     function(boleto){return boleto}];
+console.log(boletoArray[0](433, 988), boletoArray[1](798) );
+console.log(boletoArray.length)
+
+
+
     //ou usar arrow function
  const array = [(nameadmin) => {return nameadmin}];
     console.log(valorarray[0]('Lucas Cavalcante'));   

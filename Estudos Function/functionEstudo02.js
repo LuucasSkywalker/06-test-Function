@@ -1,4 +1,4 @@
-// função bind e this Objeto
+// função ( bind ) e (this) em Objeto
 /*O bind é responsavel por amarrar o metodo sempre que for chamado
 ou referenciar como exemplo abaixo "person"*/
 
